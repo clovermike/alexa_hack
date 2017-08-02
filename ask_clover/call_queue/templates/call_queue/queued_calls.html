@@ -1,0 +1,9 @@
+{% if queued_calls %}
+    <ul>
+    {% for call in queued_calls %}
+    <li>personid: {{ call.personid }}, reason: {{ call.reason }}, timestamp: {{ call.timestamp }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No calls are queued.</p>
+{% endif %}
