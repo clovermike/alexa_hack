@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'django_alexa',
     'call_queue.apps.CallQueueConfig',
     'django.contrib.admin',
     'django.contrib.auth',
